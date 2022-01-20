@@ -5,6 +5,7 @@
     "start": "node run.js"
   },
   "dependencies": {
+    "deep-equal": "^2.0.5",
     "nodemon": "^2.0.12"
   }
 }
