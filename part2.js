@@ -10,9 +10,6 @@ function generateTitle(titles) {
 
 }
 
-test('maps titles1 correctly', () => {
-  expect(generateTitle(titles1)).toEqual({ name: 'Example 3', episode: 1 });
-});
-test('maps titles2 correctly', () => {
-  expect(generateTitle(titles2)).toEqual({ name: null, episode: 4 });
-});
+// { name: 'Example 3', episode: 1 }
+// { name: null, episode: 4 }
+

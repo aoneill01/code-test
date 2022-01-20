@@ -1,6 +1,5 @@
 /*
 Input: array of objects with the following properties: system, name, episode, and season.
-
 If there is a system of 'b', return its name value.
 Otherwise, if there is a system of 'c', return its name value.
 Otherwise, if there is a system of 'a', return its name value.
@@ -42,9 +41,12 @@ const titles2 = [
   },
 ];
 
-test('finds name for system c', () => {
-  expect(getName(titles1)).toBe('Example 3');
-});
-test('falls back to null when no system found', () => {
-  expect(getName(titles2)).toBe(null);
-});
+const name1 = getName(titles1);
+console.assert(name1 === 'Example 3', 'Did not find system c', name1);
+
+const name2 = getName(titles2);
+console.assert(
+  name2 === null,
+  'Did not fall back to null when no system found',
+  name2
+);
