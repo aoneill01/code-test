@@ -41,6 +41,8 @@ const titles2 = [
   },
 ];
 
+console.log('Starting tests...')
+
 const name1 = getName(titles1);
 console.assert(name1 === "Example 3", "Did not find system c", name1);
 
@@ -50,3 +52,5 @@ console.assert(
   "Did not fall back to null when no system found",
   name2
 );
+
+console.log('Finished tests')
